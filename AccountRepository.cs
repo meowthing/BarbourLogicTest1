@@ -1,8 +1,8 @@
-﻿using DebuggingAndRefactoringTask1.Models;
+﻿using BankingSystem.Models;
 
-namespace DebuggingAndRefactoringTask1
+namespace BankingSystem
 {
-    internal class AccountRepository
+    public class AccountRepository : IAccountRepository
     {
         public List<Account> accounts = new List<Account>();
 

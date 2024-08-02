@@ -1,4 +1,4 @@
-﻿namespace DebuggingAndRefactoringTask1.Models
+﻿namespace BankingSystem.Models
 {
     public class Account
     {

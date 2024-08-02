@@ -1,12 +1,16 @@
-﻿using DebuggingAndRefactoringTask1;
-using DebuggingAndRefactoringTask1.Models;
+﻿using BankingSystem.Models;
 using System.Globalization;
 
 namespace BankingSystem
 {
     public class ConsoleManager
     {
-        AccountRepository accountRepository = new AccountRepository();
+        IAccountRepository accountRepository;
+
+        public ConsoleManager(IAccountRepository repository)
+        {
+            accountRepository = repository;
+        }
 
         public void Run()
         {
